@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.json());
 
-app.get("/api/test", (req, res) => {
+app.get("/", (req, res) => {
     res.json({
         ip: req.ip,
         ips: req.ips,
